@@ -102,8 +102,6 @@ Docs: [Web SDK installation](https://primer.io/docs/sdk/web/v2.x.x/installation)
 ## Assumptions
 
 - Sandbox environment only; no production keys
-- Fixed order amount (SGD 25.00) for demo purposes — no cart or database
-- Card + Google Pay enabled in checkout UI
 - Local development with open CORS for simplicity
 
 ## Challenges encountered
