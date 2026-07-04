@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Primer Checkout</title>
+  <style>
+    body { font-family: sans-serif; background: #f4f5f7; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+    .container { background: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); width: 100%; max-width: 400px; }
+    primer-checkout { --primer-color-brand: #00D665; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Universal Checkout</h2>
+    <primer-checkout id="primer-checkout-element">
+      <primer-main slot="main">
+        <div slot="payments">
+          <primer-payment-method-container include="PAYMENT_CARD,GOOGLE_PAY"></primer-payment-method-container>
+        </div>
+        <div slot="checkout-complete">
+          <h3 style="color: #00D665; text-align: center;">Payment Authorized Successfully</h3>
+        </div>
+      </primer-main>
+      <primer-error-message-container></primer-error-message-container>
+    </primer-checkout>
+  </div>
+  <script type="module" src="/main.js"></script>
+</body>
+</html>

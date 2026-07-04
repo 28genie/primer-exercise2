@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Primer Checkout (checkout-web)</title>
+  <style>
+    body { font-family: sans-serif; background: #f4f5f7; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; padding: 20px; box-sizing: border-box; }
+    .container { background: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); width: 100%; max-width: 420px; }
+    #checkout-container { min-height: 200px; }
+    #success-message { color: #00D665; text-align: center; margin-top: 16px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Universal Checkout</h2>
+    <p style="color: #666; font-size: 14px; margin-top: 0;">@primer-io/checkout-web (Drop-in)</p>
+    <div id="checkout-container"></div>
+    <h3 id="success-message" hidden>Payment Authorized Successfully</h3>
+  </div>
+  <script type="module" src="/main.js"></script>
+</body>
+</html>
